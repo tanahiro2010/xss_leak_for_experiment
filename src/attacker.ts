@@ -1,6 +1,6 @@
 import { Hono } from "hono";
 
-const attackApp = new Hono();
+const attacker = new Hono();
 
 const VICTIM = "http://localhost:3001";
 const POOL_SIZE = 6; // Chromiumの同一オリジン接続上限
@@ -19,7 +19,7 @@ const POOL_SIZE = 6; // Chromiumの同一オリジン接続上限
  *   パスはURLの一部なので、同一ホストへの複数リクエストが
  *   競合する場合にパスの辞書順が処理順に影響するか検証する。
  */
-attackApp.get("/", (c) => {
+attacker.get("/", (c) => {
   return c.html(/* html */ `<!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -299,4 +299,4 @@ attackApp.get("/", (c) => {
 </html>`);
 });
 
-export default attackApp;
+export { attacker };
