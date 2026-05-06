@@ -66,3 +66,6 @@ http://localhost:3000 をChromiumで開く。
 # 結果
 実験の結果は、以下のファイルに記します（ネタバレ防止のため、ここでは詳細を省略します）：
 - [実験結果と考察](RESULTS.md)
+
+# 参照
+- XSS-Leakに関して：[こちら](https://blog.babelo.xyz/posts/cross-site-subdomain-leak/)
