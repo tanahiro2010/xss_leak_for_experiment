@@ -60,7 +60,7 @@ Either outcome is interesting.
 
 Experiment results are documented in the following file (omitted here to avoid spoilers):
 
-- [Results and Analysis](RESULTS-RN.md)
+- [Results and Analysis](RESULTS-EN.md)
 
 # References
 - For Japanese: [ここから](README.md)
